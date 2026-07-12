@@ -54,7 +54,7 @@ function HomepageHeader() {
               <span className={styles.codeBlockTitle}>atlas-client.ts</span>
             </div>
             <pre className={styles.codeBlockBody}>
-              <code>{`import { AtlasClient, WalletType } from 'atlas.js';
+              <code>{`import { AtlasClient, WalletType } from '@atlasdepin/atlas.js';
 
 const client = await AtlasClient.new({
   chainId: 'atlas-1',

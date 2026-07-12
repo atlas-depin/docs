@@ -14,7 +14,7 @@ npm install atlas.js
 
 ### 1. Create a client
 ```ts
-import { AtlasClient } from 'atlas.js';
+import { AtlasClient } from '@atlasdepin/atlas.js';
 
 const client = await AtlasClient.new({
   chainId: 'atlas-1',
@@ -26,7 +26,7 @@ The constructor validates that `chainId` and `rpcEndpoint` are present and throw
 ### 2. Connect a wallet
 
 ```ts
-import { WalletType } from 'atlas.js';
+import { WalletType } from '@atlasdepin/atlas.js';
 
 await client.connectWallet(WalletType.KEPLR);
 ```

@@ -11,7 +11,7 @@ This is particularily useful for clients that want to index files their own way 
 ## Creating a StorageHandler
 
 ```ts
-import { StorageHandler } from 'atlas.js';
+import { StorageHandler } from '@atlasdepin/atlas.js';
 
 // Create an atlas client if you don't already have one
 // const client = await AtlasClient.new({chainId: "atlas-1", rpcEndpoint: "https://rpc.atlasprotocol.cloud"})
@@ -48,7 +48,7 @@ enum Privacy {
 ### Single upload
 
 ```ts
-import { Privacy } from 'atlas.js';
+import { Privacy } from '@atlasdepin/atlas.js';
 
 // Public (unencrypted) upload
 const result = await storage.uploadFile(myFile, 'sub-456', Privacy.PUBLIC);
