@@ -54,7 +54,7 @@ const docSections: DocSection[] = [
         drive management, replication, and serving storage requests.
       </>
     ),
-    linkTo: '/docs/atlas-js/storage-handler',
+    linkTo: '/docs/providers/cygnus',
   },
   {
     title: 'Network & RPC',

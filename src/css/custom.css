@@ -28,10 +28,15 @@
   --ifm-background-color: #070a10;
   --ifm-background-surface-color: #0d121c;
   --ifm-navbar-background-color: rgba(7, 10, 16, 0.85);
-  --ifm-color-content: #edf3ff;
-  --ifm-color-content-secondary: #aebddb;
-  --ifm-heading-color: #edf3ff;
+  --ifm-color-content: #d6e0f5;
+  --ifm-color-content-secondary: #9caec9;
+  --ifm-heading-color: #e8edf5;
   --atlas-accent-2: #70d3c2;
   --atlas-surface-strong: #111a28;
   --atlas-panel: #121b2a;
+}
+
+.footer {
+  --ifm-footer-padding-vertical: 0.75rem;
+  --ifm-footer-padding-horizontal: 1rem;
 }

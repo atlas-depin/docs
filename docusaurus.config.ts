@@ -52,18 +52,6 @@ const config: Config = {
       },
       items: [
         {
-          type: 'docSidebar',
-          sidebarId: 'docs',
-          position: 'left',
-          label: 'Docs',
-        },
-        {
-          type: 'docSidebar',
-          sidebarId: 'api',
-          position: 'left',
-          label: 'API Reference',
-        },
-        {
           href: 'https://github.com/Atlas-DePIN',
           label: 'GitHub',
           position: 'right',
@@ -71,32 +59,8 @@ const config: Config = {
       ],
     },
     footer: {
-      style: 'dark',
-      links: [
-        {
-          title: 'Docs',
-          items: [
-            {
-              label: 'Getting Started',
-              to: '/docs/atlas-js/intro',
-            },
-            {
-              label: 'API Reference',
-              to: '/docs/api',
-            },
-          ],
-        },
-        {
-          title: 'More',
-          items: [
-            {
-              label: 'GitHub',
-              href: 'https://github.com/Atlas-DePIN',
-            },
-          ],
-        },
-      ],
-      copyright: `Copyright © ${new Date().getFullYear()} Atlas Protocol.`,
+      links: [],
+      copyright: `© ${new Date().getFullYear()} Atlas Protocol.`,
     },
     prism: {
       theme: prismThemes.github,

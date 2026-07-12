@@ -39,7 +39,7 @@ Storage is measured in **byte-seconds** — one credit = storing one byte for on
 
 ## File Lifecycle
 
-Files are identified by `SHA256(merkle_root \|\| creator \|\| nonce)`, keyed on-chain as `(creator, subscription_id, fid)`. A file progresses through **STAGED** → **STRAY** → **ACTIVE** statuses as providers prove they hold it, or becomes **DEAD** if all providers fail their proof challenges.
+Files are identified by `SHA256(merkle_root | creator | nonce)`, keyed on-chain as `(creator, subscription_id, fid)`. A file progresses through **STAGED** → **STRAY** → **ACTIVE** statuses as providers prove they hold it, or becomes **DEAD** if all providers fail their proof challenges.
 
 <img src={require('/img/AP_FileUploadWorkflow.png').default} alt="File upload workflow" style={{maxWidth: '800px', borderRadius: '8px', margin: '2rem auto', display: 'block'}} />
 

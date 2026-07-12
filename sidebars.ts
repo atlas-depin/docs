@@ -13,6 +13,13 @@ const sidebars: SidebarsConfig = {
     },
     {
       type: 'category',
+      label: 'Storage Providers',
+      items: [
+        'providers/cygnus',
+      ],
+    },
+    {
+      type: 'category',
       label: 'atlas.js',
       items: [
         'atlas-js/intro',
@@ -20,6 +27,11 @@ const sidebars: SidebarsConfig = {
         'atlas-js/atlas-client',
         'atlas-js/storage-manager',
         'atlas-js/storage-handler',
+        {
+          type: 'link',
+          label: 'SDK Reference',
+          href: '/docs/api',
+        },
       ],
     }
   ],

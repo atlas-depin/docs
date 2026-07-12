@@ -53,11 +53,7 @@ a pool of protocol owned liquidity (POL).
 
 ### Credit Manipulation
 
-[TODO]: the diragrams are done
-
-### Subscription Expiry Caveat
-
-[TODO]: explain the problem...
+<img src={require('/img/AP_CreditCalculations.png').default} alt="Storage credit computations" style={{maxWidth: '700px', borderRadius: '8px', margin: '2rem auto', display: 'block'}} /> 
 
 ## Subscriptions
 
@@ -120,6 +116,50 @@ message MsgExpandStorage {
 
 New storage credits are minted and the subscription's `end` or `spaceAvailable` parameters are updated accordingly. 
 There is no shrinking or refund policy. This is to be investigated for future releases.
+
+### Subscription Expiry
+
+Every subscription has an `End` timestamp. Expiry detection and cleanup runs in the EndBlocker **every block**, not on-demand.
+
+#### Expiry Index
+
+An inverted keyset index (`SubscriptionExpiryIndex`) contains `(endUnix, subscriptionId, owner)`, ordered by `endUnix`. 
+The EndBlocker performs a bounded scan using a `PrefixUntilTripleRange(now)` on this index, so only subscriptions whose `endUnix` has passed are iterated. 
+This is O(expiring subscriptions), not O(all subscriptions).
+
+#### Per-Subscription Provider Byte Tracker
+
+Each subscription maintains a `SubscriptionProviderBytes` map: `(subscriptionId, providerAddress)` → `totalBytes`. This tracks, per subscription, how many bytes each provider is storing on files under that subscription.
+
+When a subscription expires, the EndBlocker's `ExpireSubscriptions` function:
+
+1. Iterates the expiry index to find expired subscriptions.
+2. For each expired subscription, iterates its `SubscriptionProviderBytes` entries.
+3. Decrements each provider's `SpaceUsed` by the tracked total and removes the entry.
+4. Applies `CreditDelta += totalBytes × (endUnix - lastRewardsTime)` — compensating providers for storage served between the last reward distribution and the subscription expiry.
+5. Removes the subscription record and its expiry index entry.
+
+This avoids scanning every file under a subscription at expiry time, preventing the need for a file count limit on subscriptions.
+
+#### Provider Space Accounting
+
+When a file is proved (stray claim) or deleted, the module also updates `SubscriptionProviderBytes` synchronously:
+
+- **File proved** (`AttemptAddProvider`): `SubscriptionProviderBytes[sub, provider] += fileSize`
+- **File deleted** (`DeleteFile`): `SubscriptionProviderBytes[sub, provider] -= fileSize`
+- **Challenge miss** (`HandleMissedChallenge`, provider removed): same decrement
+
+#### Lazy Per-File Cleanup
+
+`ExpireFile` is called lazily from `ProveFile` and `AttemptChallenge` when they encounter a file whose subscription has expired. It compensates the provider for the pre-expiry window via `CreditDelta`:
+
+- If the subscription still exists (lazy expiry before EndBlocker run), `DecrementProviderSpaceUsed` is called with `delta = subscription.End - lastRewardsTime`.
+- If the subscription is already gone (EndBlocker already handled it), the `DecrementProviderSpaceUsed` call is **skipped** to avoid double-decrementing `SpaceUsed`.
+- The file record is removed and `FileCount` is decremented.
+
+#### Residual Credit Burn
+
+When a subscription expires, its remaining credit allocation is **not refunded**. The credit pool is decreased by the residual amount, and the equivalent value in tokens is transferred to **protocol-owned liquidity (POL)**, ensuring unused prepaid storage value is not lost, but instead accrues to the protocol.
 
 ## Providers
 
@@ -248,7 +288,7 @@ Atlas Protocol uses a deterministic challenge mechanism to verify that providers
 A two-layer hybrid hash scheme is used:
 
 - **Leaf hashes**: Blake3 cryptographic hash of each 1 KiB data chunk.
-- **Internal nodes**: XXH3-128bit non-cryptographic hash (approximately 10× faster than Blake3 for Merkle node construction).
+- **Internal nodes**: XXH3-128bit non-cryptographic hash.
 
 ### Challenge Structure
 

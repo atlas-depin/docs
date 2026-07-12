@@ -22,8 +22,8 @@ function HomepageHeader() {
           <p className={styles.heroSubtitle}>{siteConfig.tagline}</p>
           <p className={styles.heroDescription}>
             Comprehensive documentation for the Atlas Protocol ecosystem —
-            protocol architecture, the atlas.js TypeScript SDK, storage
-            providers, network queries, and API reference.
+            protocol architecture, storage providers, developer SDKs,
+            network queries, and API reference.
           </p>
           <div className={styles.buttons}>
             <Link
