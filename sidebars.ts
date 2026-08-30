@@ -15,7 +15,10 @@ const sidebars: SidebarsConfig = {
       type: 'category',
       label: 'Storage Providers',
       items: [
-        'providers/cygnus',
+        'providers/getting-started',
+        'providers/sync-maintenance',
+        'providers/api',
+        'providers/reverse-proxy',
       ],
     },
     {

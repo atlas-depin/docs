@@ -1,0 +1,31 @@
+---
+sidebar_position: 2
+---
+
+# Sync & Maintenance
+
+## Sync config changes to the chain
+
+After changing `hostname` or `total_bytes_offered` in `config.yaml`, push the changes to the on-chain provider record:
+
+```bash
+cygnus sync
+```
+
+This compares local config against the on-chain record and, if anything differs, broadcasts an `UpdateProvider` transaction. It is safe to run any time and it is a no-op when nothing has changed.
+
+## Clean stale files
+
+Files that have not been proved on-chain for 3+ proof windows are considered stale. The provider cleans them automatically at proof-window boundaries during normal operation. To trigger a manual cleanup:
+
+```bash
+cygnus clean
+```
+
+## Logs
+
+Control verbosity with the global flag:
+
+```bash
+cygnus start --log-level debug   # info | error | debug
+```

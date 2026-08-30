@@ -1,0 +1,18 @@
+---
+sidebar_position: 3
+---
+
+# Provider API
+
+The provider exposes a REST API on the configured port (default `3333`):
+
+| Endpoint | Method | Description |
+|----------|--------|-------------|
+| `/api/v1/health` | GET | Liveness check |
+| `/api/v1/status` | GET | Provider status (disk usage, file count, chain sync) |
+| `/api/v1/files` | GET | Paginated list of stored files |
+| `/api/v1/files/:id` | GET | Metadata for a single file |
+| `/api/v1/upload` | POST | Multipart upload — form fields `fid` (file ID) and `file` (binary data) |
+| `/api/v1/download/:id` | GET | Download a stored file by ID |
+
+The upload endpoint validates that the `fid` corresponds to a file staged on-chain before accepting the data.

@@ -54,7 +54,7 @@ const docSections: DocSection[] = [
         drive management, replication, and serving storage requests.
       </>
     ),
-    linkTo: '/docs/providers/cygnus',
+    linkTo: '/docs/providers/getting-started',
   },
   {
     title: 'Network & RPC',
