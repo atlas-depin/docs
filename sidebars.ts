@@ -4,7 +4,7 @@ const sidebars: SidebarsConfig = {
   docs: [
     {
       type: 'category',
-      label: 'Atlas Protocol',
+      label: 'Atlas DePIN',
       items: [
         'protocol/architecture',
         'protocol/x-storage',

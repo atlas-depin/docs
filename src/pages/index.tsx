@@ -17,11 +17,11 @@ function HomepageHeader() {
         <div className={styles.heroContent}>
           <p className={styles.heroEyebrow}>Documentation</p>
           <Heading as="h1" className={styles.heroTitle}>
-            Atlas Protocol
+            Atlas DePIN
           </Heading>
           <p className={styles.heroSubtitle}>{siteConfig.tagline}</p>
           <p className={styles.heroDescription}>
-            Comprehensive documentation for the Atlas Protocol ecosystem —
+            Comprehensive documentation for the Atlas DePIN ecosystem —
             protocol architecture, storage providers, developer SDKs,
             network queries, and API reference.
           </p>
@@ -34,14 +34,14 @@ function HomepageHeader() {
             <Link
               className={clsx('button button--secondary button--lg', styles.ctaSecondary)}
               to="/docs/protocol/architecture">
-              Protocol Docs
+              Atlas Docs
             </Link>
             <Link
               className={styles.ctaExternal}
-              href="https://atlasprotocol.cloud"
+              href="https://atlasdepin.com"
               target="_blank"
               rel="noopener">
-              atlasprotocol.cloud ↗
+              atlasdepin.com ↗
             </Link>
           </div>
         </div>
@@ -58,7 +58,7 @@ function HomepageHeader() {
 
 const client = await AtlasClient.new({
   chainId: 'atlas-1',
-  rpcEndpoint: 'https://rpc.atlasprotocol.cloud',
+  rpcEndpoint: 'https://rpc.atlasdepin.com',
 });
 
 await client.connectWallet(WalletType.KEPLR);
@@ -78,7 +78,7 @@ export default function Home(): ReactNode {
   return (
     <Layout
       title={siteConfig.title}
-      description="Documentation for the Atlas Protocol ecosystem — protocol architecture, atlas.js SDK, storage providers, network queries, and API reference.">
+      description="Documentation for the Atlas DePIN ecosystem — protocol architecture, atlas.js SDK, storage providers, network queries, and API reference.">
       <HomepageHeader />
       <main>
         <HomepageFeatures />

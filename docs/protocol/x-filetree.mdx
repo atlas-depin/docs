@@ -43,7 +43,7 @@ message TreeNode {
 
 ## Access Control
 
-Each node carries optional viewer and editor address lists. While Atlas Protocol does not prescribe a single global ACL model, the module is structured to support:
+Each node carries optional viewer and editor address lists. While Atlas DePIN does not prescribe a single global ACL model, the module is structured to support:
 
 - **Node-level ownership**: the creator address has full control over renames, moves, and deletions.
 - **Delegated access**: the `editors` field accepts comma-separated addresses for write access. The `viewers` field is application-defined — typically pairs of addresses and encrypted access keys, though any scheme can be used.

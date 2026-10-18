@@ -4,7 +4,7 @@ sidebar_position: 1
 
 # Getting Started
 
-Cygnus is a fast and lightweight storage provider for the Atlas Protocol network, written in Go. It runs as a standalone daemon that connects to the Atlas blockchain, serves file uploads/downloads, responds to proof challenges, and sweeps stray files. The source lives at [github.com/Atlas-DePIN/cygnus](https://github.com/Atlas-DePIN/cygnus).
+Cygnus is a fast and lightweight storage provider for the Atlas DePIN network, written in Go. It runs as a standalone daemon that connects to the Atlas blockchain, serves file uploads/downloads, responds to proof challenges, and sweeps stray files. The source lives at [github.com/Atlas-DePIN/cygnus](https://github.com/Atlas-DePIN/cygnus).
 
 This guide walks through setting up and running your own storage provider.
 
@@ -71,8 +71,8 @@ data_directory: ~/.cygnus/data      # where file data is stored
 chain_config:
   chain_id: atlas-1
   keyring_backend: test
-  rpc_addr: https://rpc.atlasprotocol.cloud
-  grpc_addr: grpc.atlasprotocol.cloud:443
+  rpc_addr: https://rpc.atlasdepin.com
+  grpc_addr: grpc.atlasdepin.com:443
   gas_price: "0.03uatl"
   gas_adjustment: 2.0
 

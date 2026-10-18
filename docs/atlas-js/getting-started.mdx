@@ -18,7 +18,7 @@ import { AtlasClient } from '@atlasdepin/atlas.js';
 
 const client = await AtlasClient.new({
   chainId: 'atlas-1',
-  rpcEndpoint: 'https://rpc.atlasprotocol.cloud',
+  rpcEndpoint: 'https://rpc.atlasdepin.com',
 })
 ```
 The constructor validates that `chainId` and `rpcEndpoint` are present and throws immediately if either is missing.
@@ -72,7 +72,7 @@ This disconnects the wallet, marks the client as uninitialised, and removes all 
 ```ts
 const client = await AtlasClient.newAtlasClient({
   chainId: 'atlas-1',
-  rpcEndpoint: 'https://rpc.atlasprotocol.cloud',
+  rpcEndpoint: 'https://rpc.atlasdepin.com',
 });
 ```
 

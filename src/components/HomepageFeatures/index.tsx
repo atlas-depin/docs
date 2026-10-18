@@ -17,7 +17,7 @@ const docSections: DocSection[] = [
     icon: 'network',
     description: (
       <>
-        Design and architecture of the Atlas Protocol blockchain — consensus,
+        Design and architecture of the Atlas DePIN blockchain — consensus,
         network topology, storage layer, and cryptographic proofs.
       </>
     ),
@@ -61,7 +61,7 @@ const docSections: DocSection[] = [
     icon: 'globe',
     description: (
       <>
-        Atlas Protocol RPC endpoints, chain queries, network statistics,
+        Atlas DePIN RPC endpoints, chain queries, network statistics,
         and how to interact directly with the blockchain.
       </>
     ),
@@ -73,7 +73,7 @@ const docSections: DocSection[] = [
     description: (
       <>
         Quickstart guides for developers, node operators, and anyone
-        building on the Atlas Protocol ecosystem.
+        building on the Atlas DePIN ecosystem.
       </>
     ),
     linkTo: '/docs/atlas-js/getting-started',
@@ -153,9 +153,9 @@ export default function HomepageFeatures(): ReactNode {
       <div className="container">
         <div className={styles.sectionHeader}>
           <p className={styles.sectionKicker}>Docs</p>
-          <Heading as="h2">Everything Atlas Protocol</Heading>
+          <Heading as="h2">Everything Atlas DePIN</Heading>
           <p className={styles.sectionSubtitle}>
-            Explore the full documentation for the Atlas Protocol ecosystem.
+            Explore the full documentation for the Atlas DePIN ecosystem.
           </p>
         </div>
         <div className="row">

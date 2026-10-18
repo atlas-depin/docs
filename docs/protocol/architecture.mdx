@@ -4,7 +4,7 @@ sidebar_position: 1
 
 # Architecture
 
-Atlas Protocol is a Layer 1 CometBFT-based blockchain purpose-built for decentralized storage at planetary scale. It introduces a multi-dimensional storage credit mechanism that represents usage in byte-seconds, enabling fair reward distribution proportional to actual storage provided while eliminating complex per-user accounting. The protocol separates the **control plane** (on-chain: subscriptions, file indices, challenges, rewards) from the **data plane** (off-chain: file bytes stored by providers).
+Atlas DePIN is a Layer 1 CometBFT-based blockchain purpose-built for decentralized storage at planetary scale. It introduces a multi-dimensional storage credit mechanism that represents usage in byte-seconds, enabling fair reward distribution proportional to actual storage provided while eliminating complex per-user accounting. The protocol separates the **control plane** (on-chain: subscriptions, file indices, challenges, rewards) from the **data plane** (off-chain: file bytes stored by providers).
 
 ## Design Overview
 
@@ -23,7 +23,7 @@ The network consists of four actor classes. Validators secure the chain via Come
 | **Clients** | Download files from providers, use the blockchain as an index |
 | **Users** | Purchase storage, upload/delete files, manage permissions, participate in governance |
 
-<img src={require('/img/AtlasProtocol_NetworkOverview.png').default} alt="Atlas Protocol network overview" style={{maxWidth: '800px', borderRadius: '8px', margin: '2rem auto', display: 'block'}} />
+<img src={require('/img/AtlasProtocol_NetworkOverview.png').default} alt="Atlas DePIN network overview" style={{maxWidth: '800px', borderRadius: '8px', margin: '2rem auto', display: 'block'}} />
 
 ## Module Overview
 

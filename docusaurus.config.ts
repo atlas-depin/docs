@@ -3,8 +3,8 @@ import type {Config} from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 
 const config: Config = {
-  title: 'Atlas Protocol',
-  tagline: 'Protocol docs, SDK reference, and developer guides',
+  title: 'Atlas DePIN',
+  tagline: 'Blockchain docs, SDK reference, and developer guides',
   favicon: 'img/atlasprotocol_logo.png',
 
   future: {
@@ -44,9 +44,9 @@ const config: Config = {
       respectPrefersColorScheme: true,
     },
     navbar: {
-      title: 'Atlas Protocol',
+      title: 'Atlas DePIN',
       logo: {
-        alt: 'Atlas Protocol',
+        alt: 'Atlas DePIN',
         src: 'img/atlasprotocol_logo_black.png',
         srcDark: 'img/atlasprotocol_logo.png',
       },
@@ -60,7 +60,7 @@ const config: Config = {
     },
     footer: {
       links: [],
-      copyright: `© ${new Date().getFullYear()} Atlas Protocol.`,
+      copyright: `© ${new Date().getFullYear()} Atlas DePIN.`,
     },
     prism: {
       theme: prismThemes.github,

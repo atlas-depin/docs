@@ -97,7 +97,7 @@ await storage.queuePrivateFile(file, {
 
 ```ts
 // Upload to a specific provider
-await storage.startUploads('my-provider.atlasprotocol.cloud');
+await storage.startUploads('my-provider.atlasdepin.com');
 
 // Or let the manager pick random providers from the loaded list
 await storage.startUploads();
@@ -135,7 +135,7 @@ Removes the file from storage and its filetree node. If the file is not found on
 await storage.loadProviders();
 
 // Load only specific providers by hostname
-await storage.loadProviders(['provider-a.atlasprotocol.cloud']);
+await storage.loadProviders(['provider-a.atlasdepin.com']);
 
 storage.providers  // Provider[]
 ```

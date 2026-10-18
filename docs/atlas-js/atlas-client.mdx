@@ -30,7 +30,7 @@ import { AtlasClient } from "@atlasdepin/atlas.js";
 
 const client = await AtlasClient.new({
   chainId: "atlas-1",
-  rpcEndpoint: "https://rpc.atlasprotocol.cloud",
+  rpcEndpoint: "https://rpc.atlasdepin.com",
 })
 ```
 
@@ -43,7 +43,7 @@ import { AtlasClient } from "@atlasdepin/atlas.js";
 // in a synchronous function
 const client = new AtlasClient({
   chainId: "atlas-1",
-  rpcEndpoint: "https://rpc.atlasprotocol.cloud",
+  rpcEndpoint: "https://rpc.atlasdepin.com",
 })
 
 // ...
@@ -59,7 +59,7 @@ import { AtlasClient } from "@atlasdepin/atlas.js";
 
 const client = new AtlasClient({
   chainId: "atlas-1",
-  rpcEndpoint: "https://rpc.atlasprotocol.cloud",
+  rpcEndpoint: "https://rpc.atlasdepin.com",
 })
 
 client.on(ClientEvent.INITIALIZED, () => {

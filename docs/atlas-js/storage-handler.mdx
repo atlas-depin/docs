@@ -14,7 +14,7 @@ This is particularily useful for clients that want to index files their own way 
 import { StorageHandler } from '@atlasdepin/atlas.js';
 
 // Create an atlas client if you don't already have one
-// const client = await AtlasClient.new({chainId: "atlas-1", rpcEndpoint: "https://rpc.atlasprotocol.cloud"})
+// const client = await AtlasClient.new({chainId: "atlas-1", rpcEndpoint: "https://rpc.atlasdepin.com"})
 
 const storage = new StorageHandler(client);
 ```
@@ -28,7 +28,7 @@ and it will use those providers by default, or you can pass a provider hostname 
 await storage.loadProviders();
 
 // Load only specific providers by hostname
-await storage.loadProviders(['provider-a.atlasprotocol.cloud']);
+await storage.loadProviders(['provider-a.atlasdepin.com']);
 
 storage.providers  // Provider[]
 ```

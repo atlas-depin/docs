@@ -4,7 +4,7 @@ sidebar_position: 1
 
 # Introduction
 
-**atlas.js** is the official TypeScript SDK for interacting with the [Atlas Protocol](https://atlasprotocol.cloud) blockchain. It provides a unified client interface for wallet management, transaction signing, and domain-specific queries (storage, file tree, subscriptions).
+**atlas.js** is the official TypeScript SDK for interacting with the [Atlas DePIN](https://atlasdepin.com) blockchain. It provides a unified client interface for wallet management, transaction signing, and domain-specific queries (storage, file tree, subscriptions).
 
 ## Quick overview
 
@@ -13,7 +13,7 @@ import { AtlasClient, WalletType } from '@atlasdepin/atlas.js';
 
 const client = new AtlasClient({
   chainId: 'atlas-1',
-  rpcEndpoint: 'https://rpc.atlasprotocol.cloud',
+  rpcEndpoint: 'https://rpc.atlasdepin.com',
 });
 
 await client.connectWallet(WalletType.KEPLR);
@@ -34,4 +34,4 @@ console.log(stats);
 
 - Node.js 18+
 - A Keplr wallet browser extension (for browser usage)
-- Access to an Atlas Protocol RPC endpoint
+- Access to an Atlas DePIN RPC endpoint
