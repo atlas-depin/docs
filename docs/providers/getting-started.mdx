@@ -10,7 +10,7 @@ This guide walks through setting up and running your own storage provider.
 
 ## Prerequisites
 
-- **Go 1.22+**
+- **Go 1.25+**
 - **ATL tokens** for the provider wallet — registering a provider requires a **10,000 ATL deposit** (returned when the provider is sunsetted)
 - A reachable hostname or public IP for the provider's API server (port `3333` by default)
 - Enough disk space for `total_bytes_offered` plus the local data index
@@ -20,16 +20,10 @@ This guide walks through setting up and running your own storage provider.
 Download the latest release from the [cygnus repository](https://github.com/Atlas-DePIN/cygnus):
 
 ```bash
-curl -LO https://github.com/Atlas-DePIN/cygnus/releases/download/v0.1.0/cygnus-linux-amd64
+curl -LO https://github.com/atlas-depin/cygnus/releases/latest/download/cygnus-linux-amd64
 chmod +x cygnus-linux-amd64
-mv cygnus-linux-amd64 /usr/local/bin/cygnus
+sudo mv cygnus-linux-amd64 /usr/local/bin/cygnus
 ```
-
-:::note
-
-Releases are not published yet — check the repository for updates, or build from source while waiting.
-
-:::
 
 Verify the install:
 
@@ -67,31 +61,29 @@ The generated `config.yaml` lives in the home directory (`~/.cygnus/config.yaml`
 
 ```yaml
 data_directory: ~/.cygnus/data      # where file data is stored
-
 chain_config:
-  chain_id: atlas-1
-  keyring_backend: test
-  rpc_addr: https://rpc.atlasdepin.com
-  grpc_addr: grpc.atlasdepin.com:443
-  gas_price: "0.03uatl"
-  gas_adjustment: 2.0
-
+    chain_id: itineraria-1
+    keyring_backend: test
+    rpc_addr: https://rpc.atlasdepin.com
+    grpc_addr: grpc.atlasdepin.com:443
+    gas_price: 0.03uatl
+    gas_adjustment: 2
 api_config:
-  port: 3333                        # provider API port
-  max_upload_size: 4294967296       # 4 GiB max upload
-  pause_uploads_for_proofs: true    # prioritize proofs over uploads
-  fsync_uploads: false
-
+    port: 3333                      # provider API port
+    max_upload_size: 0              # unlimited max file size
+    prioritize_proofs: true         # prioritize proof txs over new upload txs
+    fsync_uploads: true
+    upload_buffer_mode: auto
+    timeout_seconds: 1800
 provider_name: My First Provider
-hostname: localhost                   # public hostname or IP
+hostname: localhost                 # public hostname or IP
 total_bytes_offered: 10000000000    # 10 GB of committed capacity
 cache_merkle_trees: true
-
 stray_sweep:
-  enabled: true
-  interval_seconds: 60
-  max_claims_per_sweep: 25
-  max_concurrent_claims: 5
+    enabled: true
+    interval_seconds: 60
+    max_claims_per_sweep: 25
+    max_concurrent_claims: 5
 ```
 
 Key fields to set before starting:
