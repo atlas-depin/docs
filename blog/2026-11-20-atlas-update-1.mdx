@@ -1,0 +1,52 @@
+---
+slug: atlas-log-1
+title: 'Dev Log #1: The First of Many'
+description: 'Introducing the Atlas DePIN dev log series.'
+image: /img/blog/dev-log-header.png
+tags: [updates]
+hide_table_of_contents: true
+---
+
+<img
+  className="dev-log-header"
+  src="/img/blog/dev-log-header.png"
+  alt="Illustration of connected cloud storage, code, and server infrastructure"
+/>
+
+Welcome to the first Atlas DePIN development update.
+
+Starting today, we'll be trying to publish a concise update every two weeks to make it easier to follow the work happening across the Atlas ecosystem.
+Each post will gather the most relevant progress notes, technical changes, and links in one place.
+
+## Developer Tooling
+
+**TypeScript/JavaScript packages** are now available on npm: 
+[`@atlasdepin/atlas.js`](https://www.npmjs.com/package/@atlasdepin/atlas.js) and 
+[`@atlasdepin/atlas.js-protos`](https://www.npmjs.com/package/@atlasdepin/atlas.js-protos).
+
+`atlas.js` includes wallet management, transaction signing and broadcasting, typed queries, filetree operations, and storage workflows for uploads, downloads, and subscriptions. You can find the current feature overview in the [atlas.js documentation](/docs/atlas-js/intro).  
+`atlas.js-protos` provides the Atlas Protocol protobuf types and message helpers that lie beneath those integrations. 
+
+There has also been substantial progress on the Atlas Go SDK. A preliminary release now includes a wallet manager that can sign and broadcast transactions.
+It serializes simultaneous tx submissions through a per-wallet FIFO queue to avoid account-sequence conflicts; supporting both sychronous and asynchronous workflows at scale.
+
+## Atlas Hub is ready
+
+The **Atlas Hub** is ready for release. It will be **released once the testnet has at least two or three storage providers**. It brings the Atlas storage experience into one place: connect a wallet, purchase storage, manage files and directories, and upload files with configurable encryption and redundancy.
+The hub also offers an overview of the blockchain's storage statistics.
+
+<img
+  className="atlas-hub-dashboard"
+  src="/img/atlas-hub-dashboard.png"
+  alt="Atlas Hub dashboard showing storage, block, and transaction activity"
+/>
+
+## We need storage providers
+
+The network needs storage providers. If you have server capacity and would like to help build Atlas, please consider running a Cygnus instance.
+
+Storage providers who participate on testnet will receive stipends for providing storage on mainnet when the time comes.
+
+Cygnus is the Atlas storage-provider daemon. A provider connects to the network, serves uploads and downloads, responds to proof challenges, and contributes storage capacity. The [storage-provider getting-started guide](/docs/providers/getting-started) covers installation, configuration, and registration.
+
+Check back for the next installment of **News & Insights**.

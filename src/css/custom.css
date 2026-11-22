@@ -40,3 +40,16 @@
   --ifm-footer-padding-vertical: 0.75rem;
   --ifm-footer-padding-horizontal: 1rem;
 }
+
+.atlas-hub-dashboard {
+  border-radius: 0.75rem;
+  display: block;
+  max-width: 100%;
+}
+
+.dev-log-header {
+  border-radius: 0.75rem;
+  display: block;
+  margin-bottom: 1rem;
+  max-width: 100%;
+}

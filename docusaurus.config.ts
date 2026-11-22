@@ -30,7 +30,14 @@ const config: Config = {
           sidebarPath: './sidebars.ts',
           editUrl: undefined,
         },
-        blog: false,
+        blog: {
+          blogTitle: 'Atlas Updates',
+          blogDescription:
+            'Biweekly news and progress updates from the Atlas DePIN ecosystem.',
+          postsPerPage: 'ALL',
+          showReadingTime: false,
+          onUntruncatedBlogPosts: 'ignore',
+        },
         theme: {
           customCss: './src/css/custom.css',
         },
@@ -51,6 +58,16 @@ const config: Config = {
         srcDark: 'img/atlasprotocol_logo.png',
       },
       items: [
+        {
+          to: '/docs/protocol/architecture',
+          label: 'Documentation',
+          position: 'left',
+        },
+        {
+          to: '/blog/atlas-log-1',
+          label: 'News & Insights',
+          position: 'left',
+        },
         {
           href: 'https://github.com/Atlas-DePIN',
           label: 'GitHub',
