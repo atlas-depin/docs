@@ -6,7 +6,7 @@
 
 # Interface: IChainConfig
 
-Defined in: [src/types/wallet.ts:12](https://github.com/Atlas-DePIN/atlas.js/blob/17906c33c61deeae6cec4e4642ca928eac4c35d2/src/types/wallet.ts#L12)
+Defined in: [src/types/wallet.ts:26](https://github.com/Atlas-DePIN/atlas.js/blob/91d72fd6965279f3a79a437a064ed8806aa82e02/src/types/wallet.ts#L26)
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: [src/types/wallet.ts:12](https://github.com/Atlas-DePIN/atlas.js/blo
 
 > **bech32Config**: `object`
 
-Defined in: [src/types/wallet.ts:25](https://github.com/Atlas-DePIN/atlas.js/blob/17906c33c61deeae6cec4e4642ca928eac4c35d2/src/types/wallet.ts#L25)
+Defined in: [src/types/wallet.ts:39](https://github.com/Atlas-DePIN/atlas.js/blob/91d72fd6965279f3a79a437a064ed8806aa82e02/src/types/wallet.ts#L39)
 
 #### bech32PrefixAccAddr
 
@@ -46,7 +46,7 @@ Defined in: [src/types/wallet.ts:25](https://github.com/Atlas-DePIN/atlas.js/blo
 
 > **bip44**: `object`
 
-Defined in: [src/types/wallet.ts:17](https://github.com/Atlas-DePIN/atlas.js/blob/17906c33c61deeae6cec4e4642ca928eac4c35d2/src/types/wallet.ts#L17)
+Defined in: [src/types/wallet.ts:31](https://github.com/Atlas-DePIN/atlas.js/blob/91d72fd6965279f3a79a437a064ed8806aa82e02/src/types/wallet.ts#L31)
 
 #### coinType
 
@@ -58,7 +58,7 @@ Defined in: [src/types/wallet.ts:17](https://github.com/Atlas-DePIN/atlas.js/blo
 
 > **chainId**: `string`
 
-Defined in: [src/types/wallet.ts:13](https://github.com/Atlas-DePIN/atlas.js/blob/17906c33c61deeae6cec4e4642ca928eac4c35d2/src/types/wallet.ts#L13)
+Defined in: [src/types/wallet.ts:27](https://github.com/Atlas-DePIN/atlas.js/blob/91d72fd6965279f3a79a437a064ed8806aa82e02/src/types/wallet.ts#L27)
 
 ***
 
@@ -66,7 +66,7 @@ Defined in: [src/types/wallet.ts:13](https://github.com/Atlas-DePIN/atlas.js/blo
 
 > **chainName**: `string`
 
-Defined in: [src/types/wallet.ts:14](https://github.com/Atlas-DePIN/atlas.js/blob/17906c33c61deeae6cec4e4642ca928eac4c35d2/src/types/wallet.ts#L14)
+Defined in: [src/types/wallet.ts:28](https://github.com/Atlas-DePIN/atlas.js/blob/91d72fd6965279f3a79a437a064ed8806aa82e02/src/types/wallet.ts#L28)
 
 ***
 
@@ -74,7 +74,7 @@ Defined in: [src/types/wallet.ts:14](https://github.com/Atlas-DePIN/atlas.js/blo
 
 > **currencies**: `IChainCurrency`[]
 
-Defined in: [src/types/wallet.ts:33](https://github.com/Atlas-DePIN/atlas.js/blob/17906c33c61deeae6cec4e4642ca928eac4c35d2/src/types/wallet.ts#L33)
+Defined in: [src/types/wallet.ts:47](https://github.com/Atlas-DePIN/atlas.js/blob/91d72fd6965279f3a79a437a064ed8806aa82e02/src/types/wallet.ts#L47)
 
 ***
 
@@ -82,7 +82,7 @@ Defined in: [src/types/wallet.ts:33](https://github.com/Atlas-DePIN/atlas.js/blo
 
 > **features**: `string`[]
 
-Defined in: [src/types/wallet.ts:35](https://github.com/Atlas-DePIN/atlas.js/blob/17906c33c61deeae6cec4e4642ca928eac4c35d2/src/types/wallet.ts#L35)
+Defined in: [src/types/wallet.ts:49](https://github.com/Atlas-DePIN/atlas.js/blob/91d72fd6965279f3a79a437a064ed8806aa82e02/src/types/wallet.ts#L49)
 
 ***
 
@@ -90,7 +90,7 @@ Defined in: [src/types/wallet.ts:35](https://github.com/Atlas-DePIN/atlas.js/blo
 
 > **feeCurrencies**: `IChainCurrency`[]
 
-Defined in: [src/types/wallet.ts:34](https://github.com/Atlas-DePIN/atlas.js/blob/17906c33c61deeae6cec4e4642ca928eac4c35d2/src/types/wallet.ts#L34)
+Defined in: [src/types/wallet.ts:48](https://github.com/Atlas-DePIN/atlas.js/blob/91d72fd6965279f3a79a437a064ed8806aa82e02/src/types/wallet.ts#L48)
 
 ***
 
@@ -98,7 +98,7 @@ Defined in: [src/types/wallet.ts:34](https://github.com/Atlas-DePIN/atlas.js/blo
 
 > **rest**: `string`
 
-Defined in: [src/types/wallet.ts:16](https://github.com/Atlas-DePIN/atlas.js/blob/17906c33c61deeae6cec4e4642ca928eac4c35d2/src/types/wallet.ts#L16)
+Defined in: [src/types/wallet.ts:30](https://github.com/Atlas-DePIN/atlas.js/blob/91d72fd6965279f3a79a437a064ed8806aa82e02/src/types/wallet.ts#L30)
 
 ***
 
@@ -106,7 +106,7 @@ Defined in: [src/types/wallet.ts:16](https://github.com/Atlas-DePIN/atlas.js/blo
 
 > **rpc**: `string`
 
-Defined in: [src/types/wallet.ts:15](https://github.com/Atlas-DePIN/atlas.js/blob/17906c33c61deeae6cec4e4642ca928eac4c35d2/src/types/wallet.ts#L15)
+Defined in: [src/types/wallet.ts:29](https://github.com/Atlas-DePIN/atlas.js/blob/91d72fd6965279f3a79a437a064ed8806aa82e02/src/types/wallet.ts#L29)
 
 ***
 
@@ -114,7 +114,7 @@ Defined in: [src/types/wallet.ts:15](https://github.com/Atlas-DePIN/atlas.js/blo
 
 > **stakeCurrency**: `object`
 
-Defined in: [src/types/wallet.ts:20](https://github.com/Atlas-DePIN/atlas.js/blob/17906c33c61deeae6cec4e4642ca928eac4c35d2/src/types/wallet.ts#L20)
+Defined in: [src/types/wallet.ts:34](https://github.com/Atlas-DePIN/atlas.js/blob/91d72fd6965279f3a79a437a064ed8806aa82e02/src/types/wallet.ts#L34)
 
 #### coinDecimals
 

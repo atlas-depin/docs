@@ -6,7 +6,7 @@
 
 # Interface: IAtlasDriveInfo
 
-Defined in: [src/interfaces/IAtlasDriveInfo.ts:1](https://github.com/Atlas-DePIN/atlas.js/blob/17906c33c61deeae6cec4e4642ca928eac4c35d2/src/interfaces/IAtlasDriveInfo.ts#L1)
+Defined in: [src/interfaces/IAtlasDriveInfo.ts:1](https://github.com/Atlas-DePIN/atlas.js/blob/91d72fd6965279f3a79a437a064ed8806aa82e02/src/interfaces/IAtlasDriveInfo.ts#L1)
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: [src/interfaces/IAtlasDriveInfo.ts:1](https://github.com/Atlas-DePIN
 
 > **isDefault**: `boolean`
 
-Defined in: [src/interfaces/IAtlasDriveInfo.ts:4](https://github.com/Atlas-DePIN/atlas.js/blob/17906c33c61deeae6cec4e4642ca928eac4c35d2/src/interfaces/IAtlasDriveInfo.ts#L4)
+Defined in: [src/interfaces/IAtlasDriveInfo.ts:4](https://github.com/Atlas-DePIN/atlas.js/blob/91d72fd6965279f3a79a437a064ed8806aa82e02/src/interfaces/IAtlasDriveInfo.ts#L4)
 
 ***
 
@@ -22,7 +22,7 @@ Defined in: [src/interfaces/IAtlasDriveInfo.ts:4](https://github.com/Atlas-DePIN
 
 > **name**: `string`
 
-Defined in: [src/interfaces/IAtlasDriveInfo.ts:2](https://github.com/Atlas-DePIN/atlas.js/blob/17906c33c61deeae6cec4e4642ca928eac4c35d2/src/interfaces/IAtlasDriveInfo.ts#L2)
+Defined in: [src/interfaces/IAtlasDriveInfo.ts:2](https://github.com/Atlas-DePIN/atlas.js/blob/91d72fd6965279f3a79a437a064ed8806aa82e02/src/interfaces/IAtlasDriveInfo.ts#L2)
 
 ***
 
@@ -30,4 +30,4 @@ Defined in: [src/interfaces/IAtlasDriveInfo.ts:2](https://github.com/Atlas-DePIN
 
 > **size**: `number`
 
-Defined in: [src/interfaces/IAtlasDriveInfo.ts:3](https://github.com/Atlas-DePIN/atlas.js/blob/17906c33c61deeae6cec4e4642ca928eac4c35d2/src/interfaces/IAtlasDriveInfo.ts#L3)
+Defined in: [src/interfaces/IAtlasDriveInfo.ts:3](https://github.com/Atlas-DePIN/atlas.js/blob/91d72fd6965279f3a79a437a064ed8806aa82e02/src/interfaces/IAtlasDriveInfo.ts#L3)

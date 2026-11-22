@@ -133,14 +133,16 @@ challenges or offline verification.
 
 **Throws** if no wallet is connected.
 
-### createStorageHandler
+### Create a storage manager
 
 ```ts
-const manager: StorageManager = client.createStorageHandler();
+import { StorageManager } from '@atlasdepin/atlas.js';
+
+const manager = await StorageManager.new(client);
 ```
 
-Creates a new `StorageManager` instance initialized with the current client
-and its connected wallet. The manager handles the full storage lifecycle:
+`StorageManager.new()` creates and initializes a manager for the current
+client and connected wallet. The manager handles the full storage lifecycle:
 subscriptions, providers, drives, directory trees, uploads with encryption,
 and downloads with automatic provider retry.
 
@@ -317,7 +319,7 @@ Looks up a single node in a user's file tree by owner address and path.
 | `contents` | `string` | Encoded contents or metadata reference |
 | `viewers` | `string` | Viewers access control data |
 | `editors` | `string` | Editors access control data |
-| `encryption` | `EncryptionType` | Encryption status: `PUBLIC` (0), `ENCRYPTED` (1), or `PASSWORD_PROTECTED` (2) |
+| `encryption` | `Privacy` | Encryption status: `PUBLIC` (0) or `ENCRYPTED` (1) |
 
 ### FileTree Node Children
 

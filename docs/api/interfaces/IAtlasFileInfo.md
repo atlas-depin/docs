@@ -6,7 +6,7 @@
 
 # Interface: IAtlasFileInfo
 
-Defined in: [src/interfaces/IAtlasFileInfo.ts:3](https://github.com/Atlas-DePIN/atlas.js/blob/17906c33c61deeae6cec4e4642ca928eac4c35d2/src/interfaces/IAtlasFileInfo.ts#L3)
+Defined in: [src/interfaces/IAtlasFileInfo.ts:3](https://github.com/Atlas-DePIN/atlas.js/blob/91d72fd6965279f3a79a437a064ed8806aa82e02/src/interfaces/IAtlasFileInfo.ts#L3)
 
 ## Extends
 
@@ -18,7 +18,7 @@ Defined in: [src/interfaces/IAtlasFileInfo.ts:3](https://github.com/Atlas-DePIN/
 
 > **dateCreated**: `number`
 
-Defined in: [src/interfaces/INodeContents.ts:4](https://github.com/Atlas-DePIN/atlas.js/blob/17906c33c61deeae6cec4e4642ca928eac4c35d2/src/interfaces/INodeContents.ts#L4)
+Defined in: [src/interfaces/INodeContents.ts:7](https://github.com/Atlas-DePIN/atlas.js/blob/91d72fd6965279f3a79a437a064ed8806aa82e02/src/interfaces/INodeContents.ts#L7)
 
 #### Inherited from
 
@@ -30,7 +30,7 @@ Defined in: [src/interfaces/INodeContents.ts:4](https://github.com/Atlas-DePIN/a
 
 > **dateUpdated**: `number`
 
-Defined in: [src/interfaces/INodeContents.ts:3](https://github.com/Atlas-DePIN/atlas.js/blob/17906c33c61deeae6cec4e4642ca928eac4c35d2/src/interfaces/INodeContents.ts#L3)
+Defined in: [src/interfaces/INodeContents.ts:6](https://github.com/Atlas-DePIN/atlas.js/blob/91d72fd6965279f3a79a437a064ed8806aa82e02/src/interfaces/INodeContents.ts#L6)
 
 #### Inherited from
 
@@ -38,11 +38,15 @@ Defined in: [src/interfaces/INodeContents.ts:3](https://github.com/Atlas-DePIN/a
 
 ***
 
-### encrypted
+### encryption
 
-> **encrypted**: `boolean`
+> **encryption**: [`Privacy`](../enumerations/Privacy.md)
 
-Defined in: [src/interfaces/IAtlasFileInfo.ts:6](https://github.com/Atlas-DePIN/atlas.js/blob/17906c33c61deeae6cec4e4642ca928eac4c35d2/src/interfaces/IAtlasFileInfo.ts#L6)
+Defined in: [src/interfaces/INodeContents.ts:5](https://github.com/Atlas-DePIN/atlas.js/blob/91d72fd6965279f3a79a437a064ed8806aa82e02/src/interfaces/INodeContents.ts#L5)
+
+#### Inherited from
+
+`INodeContents.encryption`
 
 ***
 
@@ -50,7 +54,7 @@ Defined in: [src/interfaces/IAtlasFileInfo.ts:6](https://github.com/Atlas-DePIN/
 
 > **fid**: `string`
 
-Defined in: [src/interfaces/IAtlasFileInfo.ts:4](https://github.com/Atlas-DePIN/atlas.js/blob/17906c33c61deeae6cec4e4642ca928eac4c35d2/src/interfaces/IAtlasFileInfo.ts#L4)
+Defined in: [src/interfaces/IAtlasFileInfo.ts:4](https://github.com/Atlas-DePIN/atlas.js/blob/91d72fd6965279f3a79a437a064ed8806aa82e02/src/interfaces/IAtlasFileInfo.ts#L4)
 
 ***
 
@@ -58,7 +62,7 @@ Defined in: [src/interfaces/IAtlasFileInfo.ts:4](https://github.com/Atlas-DePIN/
 
 > **merkleRoot**: `string`
 
-Defined in: [src/interfaces/IAtlasFileInfo.ts:5](https://github.com/Atlas-DePIN/atlas.js/blob/17906c33c61deeae6cec4e4642ca928eac4c35d2/src/interfaces/IAtlasFileInfo.ts#L5)
+Defined in: [src/interfaces/IAtlasFileInfo.ts:5](https://github.com/Atlas-DePIN/atlas.js/blob/91d72fd6965279f3a79a437a064ed8806aa82e02/src/interfaces/IAtlasFileInfo.ts#L5)
 
 ***
 
@@ -66,7 +70,7 @@ Defined in: [src/interfaces/IAtlasFileInfo.ts:5](https://github.com/Atlas-DePIN/
 
 > **meta**: `IFileMetadata`
 
-Defined in: [src/interfaces/IAtlasFileInfo.ts:7](https://github.com/Atlas-DePIN/atlas.js/blob/17906c33c61deeae6cec4e4642ca928eac4c35d2/src/interfaces/IAtlasFileInfo.ts#L7)
+Defined in: [src/interfaces/IAtlasFileInfo.ts:6](https://github.com/Atlas-DePIN/atlas.js/blob/91d72fd6965279f3a79a437a064ed8806aa82e02/src/interfaces/IAtlasFileInfo.ts#L6)
 
 ***
 
@@ -74,7 +78,7 @@ Defined in: [src/interfaces/IAtlasFileInfo.ts:7](https://github.com/Atlas-DePIN/
 
 > **owner**: `string`
 
-Defined in: [src/interfaces/INodeContents.ts:2](https://github.com/Atlas-DePIN/atlas.js/blob/17906c33c61deeae6cec4e4642ca928eac4c35d2/src/interfaces/INodeContents.ts#L2)
+Defined in: [src/interfaces/INodeContents.ts:4](https://github.com/Atlas-DePIN/atlas.js/blob/91d72fd6965279f3a79a437a064ed8806aa82e02/src/interfaces/INodeContents.ts#L4)
 
 #### Inherited from
 

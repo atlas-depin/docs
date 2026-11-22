@@ -6,7 +6,7 @@
 
 # Enumeration: StorageEvents
 
-Defined in: [src/types/events.ts:10](https://github.com/Atlas-DePIN/atlas.js/blob/17906c33c61deeae6cec4e4642ca928eac4c35d2/src/types/events.ts#L10)
+Defined in: [src/types/events.ts:10](https://github.com/Atlas-DePIN/atlas.js/blob/91d72fd6965279f3a79a437a064ed8806aa82e02/src/types/events.ts#L10)
 
 ## Enumeration Members
 
@@ -14,4 +14,4 @@ Defined in: [src/types/events.ts:10](https://github.com/Atlas-DePIN/atlas.js/blo
 
 > **NONE**: `"none"`
 
-Defined in: [src/types/events.ts:11](https://github.com/Atlas-DePIN/atlas.js/blob/17906c33c61deeae6cec4e4642ca928eac4c35d2/src/types/events.ts#L11)
+Defined in: [src/types/events.ts:11](https://github.com/Atlas-DePIN/atlas.js/blob/91d72fd6965279f3a79a437a064ed8806aa82e02/src/types/events.ts#L11)

@@ -101,10 +101,10 @@ const file = await storage.downloadFile('fid123...');
 const file = await storage.downloadFile('fid123...', aes);
 
 // From a specific provider
-const file = await storage.downloadFile('fid123...', null, 'provider-hostname');
+const file = await storage.downloadFile('fid123...', aes, 'provider-hostname');
 
 // From a specific provider with a custom file name
-const file = await storage.downloadFile('fid123...', null, 'provider-hostname', 'photo.jpg');
+const file = await storage.downloadFile('fid123...', aes, 'provider-hostname', 'photo.jpg');
 ```
 
 ### Raw download
@@ -119,7 +119,7 @@ const file = await storage.downloadRaw('fid123...', 'provider-hostname');
 const txHash = await storage.deleteFile('fid123...');
 
 // Multiple files — batched into one transaction
-const txHashes = await storage.deleteFiles(['fid123...', 'fid456...']);
+const txHash = await storage.deleteFiles(['fid123...', 'fid456...']);
 ```
 
 ## Purchasing subscriptions

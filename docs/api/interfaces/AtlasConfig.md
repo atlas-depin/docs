@@ -6,7 +6,7 @@
 
 # Interface: AtlasConfig
 
-Defined in: [src/interfaces/atlas.ts:1](https://github.com/Atlas-DePIN/atlas.js/blob/17906c33c61deeae6cec4e4642ca928eac4c35d2/src/interfaces/atlas.ts#L1)
+Defined in: [src/interfaces/atlas.ts:1](https://github.com/Atlas-DePIN/atlas.js/blob/91d72fd6965279f3a79a437a064ed8806aa82e02/src/interfaces/atlas.ts#L1)
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: [src/interfaces/atlas.ts:1](https://github.com/Atlas-DePIN/atlas.js/
 
 > **chainId**: `string`
 
-Defined in: [src/interfaces/atlas.ts:2](https://github.com/Atlas-DePIN/atlas.js/blob/17906c33c61deeae6cec4e4642ca928eac4c35d2/src/interfaces/atlas.ts#L2)
+Defined in: [src/interfaces/atlas.ts:2](https://github.com/Atlas-DePIN/atlas.js/blob/91d72fd6965279f3a79a437a064ed8806aa82e02/src/interfaces/atlas.ts#L2)
 
 ***
 
@@ -22,7 +22,7 @@ Defined in: [src/interfaces/atlas.ts:2](https://github.com/Atlas-DePIN/atlas.js/
 
 > `optional` **gasAdjustment?**: `number`
 
-Defined in: [src/interfaces/atlas.ts:6](https://github.com/Atlas-DePIN/atlas.js/blob/17906c33c61deeae6cec4e4642ca928eac4c35d2/src/interfaces/atlas.ts#L6)
+Defined in: [src/interfaces/atlas.ts:6](https://github.com/Atlas-DePIN/atlas.js/blob/91d72fd6965279f3a79a437a064ed8806aa82e02/src/interfaces/atlas.ts#L6)
 
 ***
 
@@ -30,7 +30,7 @@ Defined in: [src/interfaces/atlas.ts:6](https://github.com/Atlas-DePIN/atlas.js/
 
 > `optional` **gasPrice?**: `string`
 
-Defined in: [src/interfaces/atlas.ts:5](https://github.com/Atlas-DePIN/atlas.js/blob/17906c33c61deeae6cec4e4642ca928eac4c35d2/src/interfaces/atlas.ts#L5)
+Defined in: [src/interfaces/atlas.ts:5](https://github.com/Atlas-DePIN/atlas.js/blob/91d72fd6965279f3a79a437a064ed8806aa82e02/src/interfaces/atlas.ts#L5)
 
 ***
 
@@ -38,7 +38,7 @@ Defined in: [src/interfaces/atlas.ts:5](https://github.com/Atlas-DePIN/atlas.js/
 
 > `optional` **restEndpoint?**: `string`
 
-Defined in: [src/interfaces/atlas.ts:4](https://github.com/Atlas-DePIN/atlas.js/blob/17906c33c61deeae6cec4e4642ca928eac4c35d2/src/interfaces/atlas.ts#L4)
+Defined in: [src/interfaces/atlas.ts:4](https://github.com/Atlas-DePIN/atlas.js/blob/91d72fd6965279f3a79a437a064ed8806aa82e02/src/interfaces/atlas.ts#L4)
 
 ***
 
@@ -46,4 +46,4 @@ Defined in: [src/interfaces/atlas.ts:4](https://github.com/Atlas-DePIN/atlas.js/
 
 > **rpcEndpoint**: `string`
 
-Defined in: [src/interfaces/atlas.ts:3](https://github.com/Atlas-DePIN/atlas.js/blob/17906c33c61deeae6cec4e4642ca928eac4c35d2/src/interfaces/atlas.ts#L3)
+Defined in: [src/interfaces/atlas.ts:3](https://github.com/Atlas-DePIN/atlas.js/blob/91d72fd6965279f3a79a437a064ed8806aa82e02/src/interfaces/atlas.ts#L3)

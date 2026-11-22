@@ -6,7 +6,7 @@
 
 # Interface: TxOptions
 
-Defined in: [src/interfaces/wallet.ts:10](https://github.com/Atlas-DePIN/atlas.js/blob/17906c33c61deeae6cec4e4642ca928eac4c35d2/src/interfaces/wallet.ts#L10)
+Defined in: [src/types/wallet.ts:19](https://github.com/Atlas-DePIN/atlas.js/blob/91d72fd6965279f3a79a437a064ed8806aa82e02/src/types/wallet.ts#L19)
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: [src/interfaces/wallet.ts:10](https://github.com/Atlas-DePIN/atlas.j
 
 > `optional` **fee?**: `any`
 
-Defined in: [src/interfaces/wallet.ts:12](https://github.com/Atlas-DePIN/atlas.js/blob/17906c33c61deeae6cec4e4642ca928eac4c35d2/src/interfaces/wallet.ts#L12)
+Defined in: [src/types/wallet.ts:21](https://github.com/Atlas-DePIN/atlas.js/blob/91d72fd6965279f3a79a437a064ed8806aa82e02/src/types/wallet.ts#L21)
 
 ***
 
@@ -22,7 +22,7 @@ Defined in: [src/interfaces/wallet.ts:12](https://github.com/Atlas-DePIN/atlas.j
 
 > `optional` **gas?**: `string`
 
-Defined in: [src/interfaces/wallet.ts:13](https://github.com/Atlas-DePIN/atlas.js/blob/17906c33c61deeae6cec4e4642ca928eac4c35d2/src/interfaces/wallet.ts#L13)
+Defined in: [src/types/wallet.ts:22](https://github.com/Atlas-DePIN/atlas.js/blob/91d72fd6965279f3a79a437a064ed8806aa82e02/src/types/wallet.ts#L22)
 
 ***
 
@@ -30,7 +30,7 @@ Defined in: [src/interfaces/wallet.ts:13](https://github.com/Atlas-DePIN/atlas.j
 
 > `optional` **gasAdjustment?**: `number`
 
-Defined in: [src/interfaces/wallet.ts:14](https://github.com/Atlas-DePIN/atlas.js/blob/17906c33c61deeae6cec4e4642ca928eac4c35d2/src/interfaces/wallet.ts#L14)
+Defined in: [src/types/wallet.ts:23](https://github.com/Atlas-DePIN/atlas.js/blob/91d72fd6965279f3a79a437a064ed8806aa82e02/src/types/wallet.ts#L23)
 
 ***
 
@@ -38,4 +38,4 @@ Defined in: [src/interfaces/wallet.ts:14](https://github.com/Atlas-DePIN/atlas.j
 
 > `optional` **memo?**: `string`
 
-Defined in: [src/interfaces/wallet.ts:11](https://github.com/Atlas-DePIN/atlas.js/blob/17906c33c61deeae6cec4e4642ca928eac4c35d2/src/interfaces/wallet.ts#L11)
+Defined in: [src/types/wallet.ts:20](https://github.com/Atlas-DePIN/atlas.js/blob/91d72fd6965279f3a79a437a064ed8806aa82e02/src/types/wallet.ts#L20)

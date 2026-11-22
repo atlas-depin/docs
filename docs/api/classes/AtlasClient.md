@@ -6,11 +6,11 @@
 
 # Class: AtlasClient
 
-Defined in: [src/atlas-client.ts:23](https://github.com/Atlas-DePIN/atlas.js/blob/17906c33c61deeae6cec4e4642ca928eac4c35d2/src/atlas-client.ts#L23)
+Defined in: [src/atlas-client.ts:22](https://github.com/Atlas-DePIN/atlas.js/blob/91d72fd6965279f3a79a437a064ed8806aa82e02/src/atlas-client.ts#L22)
 
 High-level client for interacting with an Atlas blockchain node.
 
-Wraps a [WalletManager](WalletManager.md) for wallet lifecycle and a [QueryHelper](QueryHelper.md)
+Wraps a WalletManager for wallet lifecycle and a [QueryHelper](QueryHelper.md)
 for read-only queries.  Emits wallet and lifecycle events so consumers
 can react to connection state changes without polling.
 
@@ -28,7 +28,7 @@ can react to connection state changes without polling.
 
 > **new AtlasClient**(`config`): `AtlasClient`
 
-Defined in: [src/atlas-client.ts:58](https://github.com/Atlas-DePIN/atlas.js/blob/17906c33c61deeae6cec4e4642ca928eac4c35d2/src/atlas-client.ts#L58)
+Defined in: [src/atlas-client.ts:56](https://github.com/Atlas-DePIN/atlas.js/blob/91d72fd6965279f3a79a437a064ed8806aa82e02/src/atlas-client.ts#L56)
 
 #### Parameters
 
@@ -57,7 +57,7 @@ If `chainId` or `rpcEndpoint` are missing.
 
 > **emit**: (`event`, ...`args`) => `boolean`
 
-Defined in: [src/atlas-client.ts:50](https://github.com/Atlas-DePIN/atlas.js/blob/17906c33c61deeae6cec4e4642ca928eac4c35d2/src/atlas-client.ts#L50)
+Defined in: [src/atlas-client.ts:48](https://github.com/Atlas-DePIN/atlas.js/blob/91d72fd6965279f3a79a437a064ed8806aa82e02/src/atlas-client.ts#L48)
 
 Synchronously calls each of the listeners registered for the event named `eventName`, in the order they were registered, passing the supplied arguments
 to each.
@@ -115,6 +115,10 @@ myEmitter.emit('event', 1, 2, 3, 4, 5);
 
 v0.1.26
 
+#### Implementation of
+
+[`IAtlasClient`](../interfaces/IAtlasClient.md).[`emit`](../interfaces/IAtlasClient.md#emit)
+
 #### Overrides
 
 `EventEmitter.emit`
@@ -125,7 +129,7 @@ v0.1.26
 
 > **off**: (`event`, `listener`) => `this`
 
-Defined in: [src/atlas-client.ts:49](https://github.com/Atlas-DePIN/atlas.js/blob/17906c33c61deeae6cec4e4642ca928eac4c35d2/src/atlas-client.ts#L49)
+Defined in: [src/atlas-client.ts:47](https://github.com/Atlas-DePIN/atlas.js/blob/91d72fd6965279f3a79a437a064ed8806aa82e02/src/atlas-client.ts#L47)
 
 Alias for `emitter.removeListener()`.
 
@@ -147,6 +151,10 @@ Alias for `emitter.removeListener()`.
 
 v10.0.0
 
+#### Implementation of
+
+[`IAtlasClient`](../interfaces/IAtlasClient.md).[`off`](../interfaces/IAtlasClient.md#off)
+
 #### Overrides
 
 `EventEmitter.off`
@@ -157,7 +165,7 @@ v10.0.0
 
 > **on**: (`event`, `listener`) => `this`
 
-Defined in: [src/atlas-client.ts:48](https://github.com/Atlas-DePIN/atlas.js/blob/17906c33c61deeae6cec4e4642ca928eac4c35d2/src/atlas-client.ts#L48)
+Defined in: [src/atlas-client.ts:46](https://github.com/Atlas-DePIN/atlas.js/blob/91d72fd6965279f3a79a437a064ed8806aa82e02/src/atlas-client.ts#L46)
 
 Adds the `listener` function to the end of the listeners array for the event
 named `eventName`. No checks are made to see if the `listener` has already
@@ -206,6 +214,10 @@ The callback function
 
 v0.1.101
 
+#### Implementation of
+
+[`IAtlasClient`](../interfaces/IAtlasClient.md).[`on`](../interfaces/IAtlasClient.md#on)
+
 #### Overrides
 
 `EventEmitter.on`
@@ -216,7 +228,7 @@ v0.1.101
 
 > `static` **captureRejections**: `boolean`
 
-Defined in: node\_modules/.pnpm/@types+node@22.19.19/node\_modules/@types/node/events.d.ts:425
+Defined in: node\_modules/@types/node/events.d.ts:425
 
 Value: [boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#Boolean_type)
 
@@ -236,7 +248,7 @@ v13.4.0, v12.16.0
 
 > `readonly` `static` **captureRejectionSymbol**: *typeof* [`captureRejectionSymbol`](#capturerejectionsymbol)
 
-Defined in: node\_modules/.pnpm/@types+node@22.19.19/node\_modules/@types/node/events.d.ts:418
+Defined in: node\_modules/@types/node/events.d.ts:418
 
 Value: `Symbol.for('nodejs.rejection')`
 
@@ -256,7 +268,7 @@ v13.4.0, v12.16.0
 
 > `static` **defaultMaxListeners**: `number`
 
-Defined in: node\_modules/.pnpm/@types+node@22.19.19/node\_modules/@types/node/events.d.ts:464
+Defined in: node\_modules/@types/node/events.d.ts:464
 
 By default, a maximum of `10` listeners can be registered for any single
 event. This limit can be changed for individual `EventEmitter` instances
@@ -308,7 +320,7 @@ v0.11.2
 
 > `readonly` `static` **errorMonitor**: *typeof* [`errorMonitor`](#errormonitor)
 
-Defined in: node\_modules/.pnpm/@types+node@22.19.19/node\_modules/@types/node/events.d.ts:411
+Defined in: node\_modules/@types/node/events.d.ts:411
 
 This symbol shall be used to install a listener for only monitoring `'error'` events. Listeners installed using this symbol are called before the regular `'error'` listeners are called.
 
@@ -331,7 +343,7 @@ v13.6.0, v12.17.0
 
 > **get** **address**(): `string`
 
-Defined in: [src/atlas-client.ts:44](https://github.com/Atlas-DePIN/atlas.js/blob/17906c33c61deeae6cec4e4642ca928eac4c35d2/src/atlas-client.ts#L44)
+Defined in: [src/atlas-client.ts:42](https://github.com/Atlas-DePIN/atlas.js/blob/91d72fd6965279f3a79a437a064ed8806aa82e02/src/atlas-client.ts#L42)
 
 Get the on-chain address of the active wallet, or an empty string
 if no wallet is connected.
@@ -352,7 +364,7 @@ if no wallet is connected.
 
 > **get** **query**(): [`QueryHelper`](QueryHelper.md)
 
-Defined in: [src/atlas-client.ts:35](https://github.com/Atlas-DePIN/atlas.js/blob/17906c33c61deeae6cec4e4642ca928eac4c35d2/src/atlas-client.ts#L35)
+Defined in: [src/atlas-client.ts:34](https://github.com/Atlas-DePIN/atlas.js/blob/91d72fd6965279f3a79a437a064ed8806aa82e02/src/atlas-client.ts#L34)
 
 ##### Returns
 
@@ -368,7 +380,7 @@ Defined in: [src/atlas-client.ts:35](https://github.com/Atlas-DePIN/atlas.js/blo
 
 > `optional` **\[captureRejectionSymbol\]**\<`K`\>(`error`, `event`, ...`args`): `void`
 
-Defined in: node\_modules/.pnpm/@types+node@22.19.19/node\_modules/@types/node/events.d.ts:103
+Defined in: node\_modules/@types/node/events.d.ts:103
 
 #### Type Parameters
 
@@ -404,7 +416,7 @@ Defined in: node\_modules/.pnpm/@types+node@22.19.19/node\_modules/@types/node/e
 
 > **addListener**\<`K`\>(`eventName`, `listener`): `this`
 
-Defined in: node\_modules/.pnpm/@types+node@22.19.19/node\_modules/@types/node/events.d.ts:642
+Defined in: node\_modules/@types/node/events.d.ts:642
 
 Alias for `emitter.on(eventName, listener)`.
 
@@ -442,7 +454,7 @@ v0.1.26
 
 > **connectWallet**(`type`, `options?`): `Promise`\<`void`\>
 
-Defined in: [src/atlas-client.ts:141](https://github.com/Atlas-DePIN/atlas.js/blob/17906c33c61deeae6cec4e4642ca928eac4c35d2/src/atlas-client.ts#L141)
+Defined in: [src/atlas-client.ts:143](https://github.com/Atlas-DePIN/atlas.js/blob/91d72fd6965279f3a79a437a064ed8806aa82e02/src/atlas-client.ts#L143)
 
 Connect a wallet of the specified type.
 
@@ -481,7 +493,7 @@ If the wallet type is unavailable or connection fails.
 
 > **disconnectWallet**(): `Promise`\<`void`\>
 
-Defined in: [src/atlas-client.ts:149](https://github.com/Atlas-DePIN/atlas.js/blob/17906c33c61deeae6cec4e4642ca928eac4c35d2/src/atlas-client.ts#L149)
+Defined in: [src/atlas-client.ts:151](https://github.com/Atlas-DePIN/atlas.js/blob/91d72fd6965279f3a79a437a064ed8806aa82e02/src/atlas-client.ts#L151)
 
 Disconnect the active wallet.
 
@@ -499,7 +511,7 @@ Disconnect the active wallet.
 
 > **dispose**(): `Promise`\<`void`\>
 
-Defined in: [src/atlas-client.ts:281](https://github.com/Atlas-DePIN/atlas.js/blob/17906c33c61deeae6cec4e4642ca928eac4c35d2/src/atlas-client.ts#L281)
+Defined in: [src/atlas-client.ts:282](https://github.com/Atlas-DePIN/atlas.js/blob/91d72fd6965279f3a79a437a064ed8806aa82e02/src/atlas-client.ts#L282)
 
 Tear down the client: disconnect the wallet, mark as uninitialized,
 and remove all event listeners.
@@ -508,13 +520,17 @@ and remove all event listeners.
 
 `Promise`\<`void`\>
 
+#### Implementation of
+
+[`IAtlasClient`](../interfaces/IAtlasClient.md).[`dispose`](../interfaces/IAtlasClient.md#dispose)
+
 ***
 
 ### eventNames()
 
 > **eventNames**(): (`string` \| `symbol`)[]
 
-Defined in: node\_modules/.pnpm/@types+node@22.19.19/node\_modules/@types/node/events.d.ts:967
+Defined in: node\_modules/@types/node/events.d.ts:967
 
 Returns an array listing the events for which the emitter has registered
 listeners. The values in the array are strings or `Symbol`s.
@@ -551,7 +567,7 @@ v6.0.0
 
 > **getMaxListeners**(): `number`
 
-Defined in: node\_modules/.pnpm/@types+node@22.19.19/node\_modules/@types/node/events.d.ts:819
+Defined in: node\_modules/@types/node/events.d.ts:819
 
 Returns the current max listener value for the `EventEmitter` which is either
 set by `emitter.setMaxListeners(n)` or defaults to [EventEmitter.defaultMaxListeners](#defaultmaxlisteners).
@@ -574,7 +590,7 @@ v1.0.0
 
 > **getWalletType**(): [`WalletType`](../enumerations/WalletType.md)
 
-Defined in: [src/atlas-client.ts:126](https://github.com/Atlas-DePIN/atlas.js/blob/17906c33c61deeae6cec4e4642ca928eac4c35d2/src/atlas-client.ts#L126)
+Defined in: [src/atlas-client.ts:128](https://github.com/Atlas-DePIN/atlas.js/blob/91d72fd6965279f3a79a437a064ed8806aa82e02/src/atlas-client.ts#L128)
 
 Return the wallet type for the active session, or `null` if no wallet
 is connected.
@@ -593,7 +609,7 @@ is connected.
 
 > **initialize**(): `Promise`\<`void`\>
 
-Defined in: [src/atlas-client.ts:92](https://github.com/Atlas-DePIN/atlas.js/blob/17906c33c61deeae6cec4e4642ca928eac4c35d2/src/atlas-client.ts#L92)
+Defined in: [src/atlas-client.ts:90](https://github.com/Atlas-DePIN/atlas.js/blob/91d72fd6965279f3a79a437a064ed8806aa82e02/src/atlas-client.ts#L90)
 
 Initialize the query client and helper.
 
@@ -615,11 +631,27 @@ If the RPC connection or protobuf client creation fails.
 
 ***
 
+### isInitialized()
+
+> **isInitialized**(): `boolean`
+
+Defined in: [src/atlas-client.ts:109](https://github.com/Atlas-DePIN/atlas.js/blob/91d72fd6965279f3a79a437a064ed8806aa82e02/src/atlas-client.ts#L109)
+
+#### Returns
+
+`boolean`
+
+#### Implementation of
+
+[`IAtlasClient`](../interfaces/IAtlasClient.md).[`isInitialized`](../interfaces/IAtlasClient.md#isinitialized)
+
+***
+
 ### isWalletConnected()
 
 > **isWalletConnected**(): `boolean`
 
-Defined in: [src/atlas-client.ts:118](https://github.com/Atlas-DePIN/atlas.js/blob/17906c33c61deeae6cec4e4642ca928eac4c35d2/src/atlas-client.ts#L118)
+Defined in: [src/atlas-client.ts:120](https://github.com/Atlas-DePIN/atlas.js/blob/91d72fd6965279f3a79a437a064ed8806aa82e02/src/atlas-client.ts#L120)
 
 `true` when a wallet is connected and ready for signing operations.
 
@@ -637,7 +669,7 @@ Defined in: [src/atlas-client.ts:118](https://github.com/Atlas-DePIN/atlas.js/bl
 
 > **listenerCount**\<`K`\>(`eventName`, `listener?`): `number`
 
-Defined in: node\_modules/.pnpm/@types+node@22.19.19/node\_modules/@types/node/events.d.ts:913
+Defined in: node\_modules/@types/node/events.d.ts:913
 
 Returns the number of listeners listening for the event named `eventName`.
 If `listener` is provided, it will return how many times the listener is found
@@ -681,7 +713,7 @@ v3.2.0
 
 > **listeners**\<`K`\>(`eventName`): `Function`[]
 
-Defined in: node\_modules/.pnpm/@types+node@22.19.19/node\_modules/@types/node/events.d.ts:832
+Defined in: node\_modules/@types/node/events.d.ts:832
 
 Returns a copy of the array of listeners for the event named `eventName`.
 
@@ -723,7 +755,7 @@ v0.1.26
 
 > **once**\<`K`\>(`eventName`, `listener`): `this`
 
-Defined in: node\_modules/.pnpm/@types+node@22.19.19/node\_modules/@types/node/events.d.ts:704
+Defined in: node\_modules/@types/node/events.d.ts:704
 
 Adds a **one-time** `listener` function for the event named `eventName`. The
 next time `eventName` is triggered, this listener is removed and then invoked.
@@ -788,7 +820,7 @@ v0.3.0
 
 > **prependListener**\<`K`\>(`eventName`, `listener`): `this`
 
-Defined in: node\_modules/.pnpm/@types+node@22.19.19/node\_modules/@types/node/events.d.ts:931
+Defined in: node\_modules/@types/node/events.d.ts:931
 
 Adds the `listener` function to the _beginning_ of the listeners array for the
 event named `eventName`. No checks are made to see if the `listener` has
@@ -841,7 +873,7 @@ v6.0.0
 
 > **prependOnceListener**\<`K`\>(`eventName`, `listener`): `this`
 
-Defined in: node\_modules/.pnpm/@types+node@22.19.19/node\_modules/@types/node/events.d.ts:947
+Defined in: node\_modules/@types/node/events.d.ts:947
 
 Adds a **one-time**`listener` function for the event named `eventName` to the _beginning_ of the listeners array. The next time `eventName` is triggered, this
 listener is removed, and then invoked.
@@ -892,7 +924,7 @@ v6.0.0
 
 > **rawListeners**\<`K`\>(`eventName`): `Function`[]
 
-Defined in: node\_modules/.pnpm/@types+node@22.19.19/node\_modules/@types/node/events.d.ts:863
+Defined in: node\_modules/@types/node/events.d.ts:863
 
 Returns a copy of the array of listeners for the event named `eventName`,
 including any wrappers (such as those created by `.once()`).
@@ -952,7 +984,7 @@ v9.4.0
 
 > **removeAllListeners**(`eventName?`): `this`
 
-Defined in: node\_modules/.pnpm/@types+node@22.19.19/node\_modules/@types/node/events.d.ts:803
+Defined in: node\_modules/@types/node/events.d.ts:803
 
 Removes all listeners, or those of the specified `eventName`.
 
@@ -986,7 +1018,7 @@ v0.1.26
 
 > **removeListener**\<`K`\>(`eventName`, `listener`): `this`
 
-Defined in: node\_modules/.pnpm/@types+node@22.19.19/node\_modules/@types/node/events.d.ts:787
+Defined in: node\_modules/@types/node/events.d.ts:787
 
 Removes the specified `listener` from the listener array for the event named `eventName`.
 
@@ -1102,7 +1134,7 @@ v0.1.26
 
 > **setMaxListeners**(`n`): `this`
 
-Defined in: node\_modules/.pnpm/@types+node@22.19.19/node\_modules/@types/node/events.d.ts:813
+Defined in: node\_modules/@types/node/events.d.ts:813
 
 By default `EventEmitter`s will print a warning if more than `10` listeners are
 added for a particular event. This is a useful default that helps finding
@@ -1135,7 +1167,7 @@ v0.3.5
 
 > **signAndBroadcast**(`messages`, `options?`): `Promise`\<`IndexedTx`\>
 
-Defined in: [src/atlas-client.ts:195](https://github.com/Atlas-DePIN/atlas.js/blob/17906c33c61deeae6cec4e4642ca928eac4c35d2/src/atlas-client.ts#L195)
+Defined in: [src/atlas-client.ts:196](https://github.com/Atlas-DePIN/atlas.js/blob/91d72fd6965279f3a79a437a064ed8806aa82e02/src/atlas-client.ts#L196)
 
 Sign and broadcast a set of messages, then wait for
 on-chain inclusion.
@@ -1168,13 +1200,17 @@ The indexed transaction once it appears on chain.
 If no wallet is connected, broadcasting fails, or the
         transaction does not confirm within the timeout.
 
+#### Implementation of
+
+[`IAtlasClient`](../interfaces/IAtlasClient.md).[`signAndBroadcast`](../interfaces/IAtlasClient.md#signandbroadcast)
+
 ***
 
 ### signMessage()
 
 > **signMessage**(`message`): `Promise`\<`string`\>
 
-Defined in: [src/atlas-client.ts:166](https://github.com/Atlas-DePIN/atlas.js/blob/17906c33c61deeae6cec4e4642ca928eac4c35d2/src/atlas-client.ts#L166)
+Defined in: [src/atlas-client.ts:167](https://github.com/Atlas-DePIN/atlas.js/blob/91d72fd6965279f3a79a437a064ed8806aa82e02/src/atlas-client.ts#L167)
 
 Sign an arbitrary message using the active wallet's key.
 
@@ -1190,12 +1226,15 @@ The data to sign (plain string or raw bytes).
 
 `Promise`\<`string`\>
 
-An object containing the raw `signature` and the original
-         `signedMessage`.
+The raw signature as a hex string.
 
 #### Throws
 
 If no wallet is connected.
+
+#### Implementation of
+
+[`IAtlasClient`](../interfaces/IAtlasClient.md).[`signMessage`](../interfaces/IAtlasClient.md#signmessage)
 
 ***
 
@@ -1203,7 +1242,7 @@ If no wallet is connected.
 
 > `static` **addAbortListener**(`signal`, `resource`): `Disposable`
 
-Defined in: node\_modules/.pnpm/@types+node@22.19.19/node\_modules/@types/node/events.d.ts:403
+Defined in: node\_modules/@types/node/events.d.ts:403
 
 Listens once to the `abort` event on the provided `signal`.
 
@@ -1265,7 +1304,7 @@ v20.5.0
 
 > `static` **getEventListeners**(`emitter`, `name`): `Function`[]
 
-Defined in: node\_modules/.pnpm/@types+node@22.19.19/node\_modules/@types/node/events.d.ts:325
+Defined in: node\_modules/@types/node/events.d.ts:325
 
 Returns a copy of the array of listeners for the event named `eventName`.
 
@@ -1320,7 +1359,7 @@ v15.2.0, v14.17.0
 
 > `static` **getMaxListeners**(`emitter`): `number`
 
-Defined in: node\_modules/.pnpm/@types+node@22.19.19/node\_modules/@types/node/events.d.ts:354
+Defined in: node\_modules/@types/node/events.d.ts:354
 
 Returns the currently set max amount of listeners.
 
@@ -1372,7 +1411,7 @@ v19.9.0
 
 > `static` **listenerCount**(`emitter`, `eventName`): `number`
 
-Defined in: node\_modules/.pnpm/@types+node@22.19.19/node\_modules/@types/node/events.d.ts:297
+Defined in: node\_modules/@types/node/events.d.ts:297
 
 A class method that returns the number of listeners for the given `eventName` registered on the given `emitter`.
 
@@ -1422,7 +1461,7 @@ Since v3.2.0 - Use `listenerCount` instead.
 
 > `static` **new**(`config`): `Promise`\<`AtlasClient`\>
 
-Defined in: [src/atlas-client.ts:77](https://github.com/Atlas-DePIN/atlas.js/blob/17906c33c61deeae6cec4e4642ca928eac4c35d2/src/atlas-client.ts#L77)
+Defined in: [src/atlas-client.ts:75](https://github.com/Atlas-DePIN/atlas.js/blob/91d72fd6965279f3a79a437a064ed8806aa82e02/src/atlas-client.ts#L75)
 
 #### Parameters
 
@@ -1442,7 +1481,7 @@ Defined in: [src/atlas-client.ts:77](https://github.com/Atlas-DePIN/atlas.js/blo
 
 > `static` **on**(`emitter`, `eventName`, `options?`): `AsyncIterator`\<`any`[]\>
 
-Defined in: node\_modules/.pnpm/@types+node@22.19.19/node\_modules/@types/node/events.d.ts:270
+Defined in: node\_modules/@types/node/events.d.ts:270
 
 ```js
 import { on, EventEmitter } from 'node:events';
@@ -1553,7 +1592,7 @@ v13.6.0, v12.16.0
 
 > `static` **on**(`emitter`, `eventName`, `options?`): `AsyncIterator`\<`any`[]\>
 
-Defined in: node\_modules/.pnpm/@types+node@22.19.19/node\_modules/@types/node/events.d.ts:275
+Defined in: node\_modules/@types/node/events.d.ts:275
 
 ```js
 import { on, EventEmitter } from 'node:events';
@@ -1668,7 +1707,7 @@ v13.6.0, v12.16.0
 
 > `static` **once**(`emitter`, `eventName`, `options?`): `Promise`\<`any`[]\>
 
-Defined in: node\_modules/.pnpm/@types+node@22.19.19/node\_modules/@types/node/events.d.ts:184
+Defined in: node\_modules/@types/node/events.d.ts:184
 
 Creates a `Promise` that is fulfilled when the `EventEmitter` emits the given
 event or that is rejected if the `EventEmitter` emits `'error'` while waiting.
@@ -1777,7 +1816,7 @@ v11.13.0, v10.16.0
 
 > `static` **once**(`emitter`, `eventName`, `options?`): `Promise`\<`any`[]\>
 
-Defined in: node\_modules/.pnpm/@types+node@22.19.19/node\_modules/@types/node/events.d.ts:189
+Defined in: node\_modules/@types/node/events.d.ts:189
 
 Creates a `Promise` that is fulfilled when the `EventEmitter` emits the given
 event or that is rejected if the `EventEmitter` emits `'error'` while waiting.
@@ -1888,7 +1927,7 @@ v11.13.0, v10.16.0
 
 > `static` **setMaxListeners**(`n?`, ...`eventTargets`): `void`
 
-Defined in: node\_modules/.pnpm/@types+node@22.19.19/node\_modules/@types/node/events.d.ts:369
+Defined in: node\_modules/@types/node/events.d.ts:369
 
 ```js
 import { setMaxListeners, EventEmitter } from 'node:events';

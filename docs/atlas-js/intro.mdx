@@ -4,14 +4,14 @@ sidebar_position: 1
 
 # Introduction
 
-**atlas.js** is the official TypeScript SDK for interacting with the [Atlas DePIN](https://atlasdepin.com) blockchain. It provides a unified client interface for wallet management, transaction signing, and domain-specific queries (storage, file tree, subscriptions).
+**atlas.js** is the official TypeScript SDK for interacting with the [Atlas DePIN](https://atlasdepin.com) blockchain. It provides a unified client interface for wallet management, transaction signing, and domain-specific queries (storage, file tree, subscriptions). These guides cover version 0.2.0.
 
 ## Quick overview
 
 ```ts
 import { AtlasClient, WalletType } from '@atlasdepin/atlas.js';
 
-const client = new AtlasClient({
+const client = await AtlasClient.new({
   chainId: 'atlas-1',
   rpcEndpoint: 'https://rpc.atlasdepin.com',
 });
@@ -27,7 +27,7 @@ console.log(stats);
 - **AtlasClient** -- High-level facade that wraps wallet lifecycle and query helpers.
 - **WalletManager** -- Orchestrates wallet adapters (Keplr, etc.) with reconnect-safe connection management.
 - **QueryHelper** -- Domain-specific read methods for storage stats, files, subscriptions, file tree nodes, and providers.
-- **Wallet adapters** -- Modular adapter classes for each supported wallet type (Keplr, with Leap and mnemonic support planned).
+- **Wallet support** -- Connect a Keplr wallet for signing and broadcasting, with wallet lifecycle managed by the client.
 - **Event-driven** -- All lifecycle events (connect, disconnect, initialization) are emitted so UI code can react without polling.
 
 ## Requirements

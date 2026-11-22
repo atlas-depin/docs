@@ -6,7 +6,7 @@
 
 # Interface: WalletInfo
 
-Defined in: [src/interfaces/wallet.ts:3](https://github.com/Atlas-DePIN/atlas.js/blob/17906c33c61deeae6cec4e4642ca928eac4c35d2/src/interfaces/wallet.ts#L3)
+Defined in: [src/types/wallet.ts:12](https://github.com/Atlas-DePIN/atlas.js/blob/91d72fd6965279f3a79a437a064ed8806aa82e02/src/types/wallet.ts#L12)
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: [src/interfaces/wallet.ts:3](https://github.com/Atlas-DePIN/atlas.js
 
 > **isAvailable**: `boolean`
 
-Defined in: [src/interfaces/wallet.ts:7](https://github.com/Atlas-DePIN/atlas.js/blob/17906c33c61deeae6cec4e4642ca928eac4c35d2/src/interfaces/wallet.ts#L7)
+Defined in: [src/types/wallet.ts:16](https://github.com/Atlas-DePIN/atlas.js/blob/91d72fd6965279f3a79a437a064ed8806aa82e02/src/types/wallet.ts#L16)
 
 ***
 
@@ -22,7 +22,7 @@ Defined in: [src/interfaces/wallet.ts:7](https://github.com/Atlas-DePIN/atlas.js
 
 > **isInstalled**: `boolean`
 
-Defined in: [src/interfaces/wallet.ts:6](https://github.com/Atlas-DePIN/atlas.js/blob/17906c33c61deeae6cec4e4642ca928eac4c35d2/src/interfaces/wallet.ts#L6)
+Defined in: [src/types/wallet.ts:15](https://github.com/Atlas-DePIN/atlas.js/blob/91d72fd6965279f3a79a437a064ed8806aa82e02/src/types/wallet.ts#L15)
 
 ***
 
@@ -30,7 +30,7 @@ Defined in: [src/interfaces/wallet.ts:6](https://github.com/Atlas-DePIN/atlas.js
 
 > **logo**: `string`
 
-Defined in: [src/interfaces/wallet.ts:5](https://github.com/Atlas-DePIN/atlas.js/blob/17906c33c61deeae6cec4e4642ca928eac4c35d2/src/interfaces/wallet.ts#L5)
+Defined in: [src/types/wallet.ts:14](https://github.com/Atlas-DePIN/atlas.js/blob/91d72fd6965279f3a79a437a064ed8806aa82e02/src/types/wallet.ts#L14)
 
 ***
 
@@ -38,4 +38,4 @@ Defined in: [src/interfaces/wallet.ts:5](https://github.com/Atlas-DePIN/atlas.js
 
 > **name**: `string`
 
-Defined in: [src/interfaces/wallet.ts:4](https://github.com/Atlas-DePIN/atlas.js/blob/17906c33c61deeae6cec4e4642ca928eac4c35d2/src/interfaces/wallet.ts#L4)
+Defined in: [src/types/wallet.ts:13](https://github.com/Atlas-DePIN/atlas.js/blob/91d72fd6965279f3a79a437a064ed8806aa82e02/src/types/wallet.ts#L13)

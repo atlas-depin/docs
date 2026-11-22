@@ -6,7 +6,7 @@
 
 # Enumeration: FileProcessingEvent
 
-Defined in: [src/types/events.ts:21](https://github.com/Atlas-DePIN/atlas.js/blob/17906c33c61deeae6cec4e4642ca928eac4c35d2/src/types/events.ts#L21)
+Defined in: [src/types/events.ts:21](https://github.com/Atlas-DePIN/atlas.js/blob/91d72fd6965279f3a79a437a064ed8806aa82e02/src/types/events.ts#L21)
 
 ## Enumeration Members
 
@@ -14,7 +14,7 @@ Defined in: [src/types/events.ts:21](https://github.com/Atlas-DePIN/atlas.js/blo
 
 > **ENCRYPTED**: `"file:encrypted"`
 
-Defined in: [src/types/events.ts:23](https://github.com/Atlas-DePIN/atlas.js/blob/17906c33c61deeae6cec4e4642ca928eac4c35d2/src/types/events.ts#L23)
+Defined in: [src/types/events.ts:23](https://github.com/Atlas-DePIN/atlas.js/blob/91d72fd6965279f3a79a437a064ed8806aa82e02/src/types/events.ts#L23)
 
 ***
 
@@ -22,7 +22,7 @@ Defined in: [src/types/events.ts:23](https://github.com/Atlas-DePIN/atlas.js/blo
 
 > **ERROR**: `"file:error"`
 
-Defined in: [src/types/events.ts:26](https://github.com/Atlas-DePIN/atlas.js/blob/17906c33c61deeae6cec4e4642ca928eac4c35d2/src/types/events.ts#L26)
+Defined in: [src/types/events.ts:26](https://github.com/Atlas-DePIN/atlas.js/blob/91d72fd6965279f3a79a437a064ed8806aa82e02/src/types/events.ts#L26)
 
 ***
 
@@ -30,7 +30,7 @@ Defined in: [src/types/events.ts:26](https://github.com/Atlas-DePIN/atlas.js/blo
 
 > **MERKLE\_BUILT**: `"file:merkle-built"`
 
-Defined in: [src/types/events.ts:24](https://github.com/Atlas-DePIN/atlas.js/blob/17906c33c61deeae6cec4e4642ca928eac4c35d2/src/types/events.ts#L24)
+Defined in: [src/types/events.ts:24](https://github.com/Atlas-DePIN/atlas.js/blob/91d72fd6965279f3a79a437a064ed8806aa82e02/src/types/events.ts#L24)
 
 ***
 
@@ -38,7 +38,7 @@ Defined in: [src/types/events.ts:24](https://github.com/Atlas-DePIN/atlas.js/blo
 
 > **PROGRESS**: `"file:progress"`
 
-Defined in: [src/types/events.ts:22](https://github.com/Atlas-DePIN/atlas.js/blob/17906c33c61deeae6cec4e4642ca928eac4c35d2/src/types/events.ts#L22)
+Defined in: [src/types/events.ts:22](https://github.com/Atlas-DePIN/atlas.js/blob/91d72fd6965279f3a79a437a064ed8806aa82e02/src/types/events.ts#L22)
 
 ***
 
@@ -46,4 +46,4 @@ Defined in: [src/types/events.ts:22](https://github.com/Atlas-DePIN/atlas.js/blo
 
 > **READY**: `"file:ready"`
 
-Defined in: [src/types/events.ts:25](https://github.com/Atlas-DePIN/atlas.js/blob/17906c33c61deeae6cec4e4642ca928eac4c35d2/src/types/events.ts#L25)
+Defined in: [src/types/events.ts:25](https://github.com/Atlas-DePIN/atlas.js/blob/91d72fd6965279f3a79a437a064ed8806aa82e02/src/types/events.ts#L25)

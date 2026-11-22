@@ -7,7 +7,7 @@ sidebar_position: 2
 ## Installation
 
 ```bash
-npm install atlas.js
+npm install @atlasdepin/atlas.js
 ```
 
 ## Basic usage
@@ -54,7 +54,7 @@ const node = await client.query.treeNode('atl1...owner', '/path/to/file');
 ```ts
 const response = await client.signAndBroadcast(messages);
 
-console.log('Tx hash:', response.transactionHash);
+console.log('Tx hash:', response.hash);
 ```
 
 `signAndBroadcast` polls until the transaction is included on chain (default 12 second timeout) and returns the full indexed transaction.
@@ -67,13 +67,4 @@ await client.dispose();
 
 This disconnects the wallet, marks the client as uninitialised, and removes all event listeners.
 
-## Using the static factory
-
-```ts
-const client = await AtlasClient.newAtlasClient({
-  chainId: 'atlas-1',
-  rpcEndpoint: 'https://rpc.atlasdepin.com',
-});
-```
-
-The factory calls `initialize()` for you, so the query client is ready immediately.
+`AtlasClient.new()` is the async factory used above. It calls `initialize()` before returning, so the query client is ready immediately.
